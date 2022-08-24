@@ -1,0 +1,39 @@
+set tabstop=4 shiftwidth=4
+set autoindent
+set smartindent
+set cindent
+set number
+set numberwidth=1
+"set mouse=a
+"set clipboard=unnamed
+syntax enable
+set showcmd
+set ruler
+set encoding=utf-8
+set showmatch
+set laststatus=2
+set t_Co=256
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('/.vim/plugged')
+"themes
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
+Plug 'easymotion/vim-easymotion'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+
+" Also highlight all tabs and trailing whitespace characters.
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+  match ExtraWhitespace /\s\+$\|\t/
+
+set bg=dark
+"set termguicolors
+colorscheme desert
+colorscheme gruvbox
+set nowrap
