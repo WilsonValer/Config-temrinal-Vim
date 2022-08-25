@@ -1,4 +1,5 @@
 # Config-temrinal-Vim
-# primer paso
+### primer paso
 crear un editor: vim .vimrc
-luego copiar dentro todo los  comando de configracion y guardar
+## segundo paso
+dentro de tu editor copiar todo el texto del file.
