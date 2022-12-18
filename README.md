@@ -34,12 +34,12 @@ a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
   desde su 'vimrc' como se muestra a continuación:
 
   ```c
- " begin plugin section
+  " begin plugin section
   call plug#begin()
 
   Plug '<GITHUB-USERNAME>/<REPOSITORY-NAME>'
 
-  " end plugin section
+   " end plugin section
   call plug#end()
   ```
 +  Entonces, si quiero instalar el tema spaceduck que está disponible
