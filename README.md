@@ -34,13 +34,38 @@ a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
   desde su 'vimrc' como se muestra a continuación:
 
   ```c
-  begin plugin section
+ " begin plugin section
   call plug#begin()
 
   Plug '<GITHUB-USERNAME>/<REPOSITORY-NAME>'
 
-  end plugin section
+  " end plugin section
   call plug#end()
+  ```
++  Entonces, si quiero instalar el tema spaceduck que está disponible
+   para Vim, a continuación se muestra cómo se vería mi 'vimrc'.
+
+   ```c
+   " begin plugin section
+	call plug#begin()
+
+	Plug 'sheerun/vim-polyglot'
+
+	" end plugin section
+	call plug#end()
+   ```
++ Y finalmente, habilite ese esquema de colores agregando la siguiente
+  línea a su 'vimrc' (si aún no lo ha hecho).
+  `colorscheme <color-scheme-name>`
+ 
+## Tips
+
++ Cuando se realize algun Cambio en **.vimrc**
+  para que surja efecto el cambio sin tener que  cerrar el terminal 
+  realizar la actualizacion desde dentro de .vimrc, asi `:source ~/.vimrc`
++ `:colorscheme [space] [press 'Ctrl + d']` esta opcion te permite ingresar
+  a toda la paleta de colores, tambien esta otra opcion `:colorscheme [space] + tab`
+
  
 
 
