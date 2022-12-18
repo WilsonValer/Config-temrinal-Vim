@@ -33,7 +33,7 @@ a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
 + La mayoría de las veces, todo lo que necesita es llamar a vim-plug
   desde su 'vimrc' como se muestra a continuación:
 
-  """
+  ```c
   begin plugin section
   call plug#begin()
 
@@ -41,6 +41,6 @@ a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
 
   end plugin section
   call plug#end()
-  """
+ 
 
 
