@@ -67,5 +67,5 @@ a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
   a toda la paleta de colores, tambien esta otra opcion `:colorscheme [space] + tab`
 
  
-
+contributor : Daisy
 
