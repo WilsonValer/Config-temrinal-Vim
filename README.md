@@ -24,3 +24,23 @@ clone el repositorio en formato `~/.config/nvim/colors.`
 + Ejecutar `mv colors/*.vim ../` (esto moverá todos los color-scheme-name.vimarchivos
 a `~ /.vim/colors/o a ~/.config/nvim/colors/` dependiendo de si es Vim o Neovim.
 + Agregue la línea colorscheme <**color-scheme-name**> a su 'vimrc'.
+
+### instalando colorscheme utilizando plugins
+
++ Un requisito previo de este método es que tenga instalado vim-plug y sepa cómo usarlo.
+  aquie les dejo el link para instalar: https://github.com/junegunn/vim-plug
+
++ La mayoría de las veces, todo lo que necesita es llamar a vim-plug
+  desde su 'vimrc' como se muestra a continuación:
+
+  """
+  begin plugin section
+  call plug#begin()
+
+  Plug '<GITHUB-USERNAME>/<REPOSITORY-NAME>'
+
+  end plugin section
+  call plug#end()
+  """
+
+
